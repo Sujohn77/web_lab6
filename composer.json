@@ -1,0 +1,15 @@
+{
+  "name": "vendor_name/coffe",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "stone",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "phpdocumentor/phpdocumentor": "v2.8.5"
+  }
+}

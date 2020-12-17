@@ -45,6 +45,14 @@
 <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="page0001.htm" title="Switzerland"><b> Читать далее >>>></b></a>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;
                   </div>
+                  <div id="item-three">
+                      <h2><img src="img/content/title_lip_guard.gif" width="70" height="17" alt="Admin post" /></h2>
+                      <img src="" width="52" height="71" alt="Admin desc" class="right" />
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Post 1                      
+<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="page0001.htm" title="Switzerland"><b> Читать далее >>>></b></a>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                  </div>
               </div>
               <div id="news">
                   <h2><img src="img/content/title_news.gif" width="85" height="17" alt="latest news" /></h2>

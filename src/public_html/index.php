@@ -20,8 +20,12 @@
         <?php    
             require_once(TEMPLATES_PATH . "/header/header.php");
         ?>
+        <!-- MODULE ACCOUNT -->
+        <?php 
+            require_once("../resources/data/account.php");
+        ?>
         <!-- MAIN CONTENT-->
-        <?php    
+        <?php  
             require_once(TEMPLATES_PATH . "/main.php");
         ?>
         <!-- FOOTER-->
