@@ -1,8 +1,16 @@
 <?php
-$db = mysqli_connect("localhost","root","", "mysql");
-//   $db = new mysqli("localhost","root","");
-//	mysqli_connect("localhost","root","", "account_base");
-//  mysqli_query ("account_base",$db);
-//	mysqli_connect("localhost","root","", "my_db");
-// new mysqli("localhost", "my_user", "my_password", "test");
+$dsn = 'mysql:dbname=test;host=127.0.0.1';
+$user = 'root';
+$password = '';
+
+/*будет бросать исключение PDOException, если соединение оборвалось.*/
+try {
+    $dbh = new PDO($dsn, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
+} catch (PDOException $e) {
+    echo 'Соединение оборвалось: ' . $e->getMessage();
+    exit;
+}
+
+// Следующий запрос приводит к ошибке уровня E_WARNING вместо исключения (когда таблица не существует)
+$query = $dbh->query("SELECT * FROM articles");
 ?>

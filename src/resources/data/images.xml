@@ -1,0 +1,22 @@
+<?php
+// Створює XML-рядок і XML-документ за допомогою DOM
+$dom = new DomDocument('1.0');
+// додавання кореня - <books>
+$books =
+$dom->appendChild($dom->createElement('books'));
+// додавання елемента <book> в <books>
+$book =
+$books->appendChild($dom->createElement('book'));
+// додавання елемента <title> в <book>
+$title =
+$book->appendChild($dom->createElement('title'));
+//додавання елемента текстового вузла <title> в <title>
+$title->appendChild(
+ $dom->createTextNode('Great American Novel'));
+//генерація xml
+$dom->formatOutput = true; // установка атрибуту
+formatOutput domDocument в значення true
+// save XML as string or file
+$test1 = $dom->saveXML(); // передача рядка в test1
+$dom->save('test1.xml'); // збереження файла
+?>
